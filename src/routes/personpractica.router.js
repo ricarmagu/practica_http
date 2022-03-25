@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const personSchema = require('../models/personquiz_models');
+const personSchema = require('../models/personpractica_models');
 
 /* Creación de un recurso */
 router.post('/person', (req,res) => {

@@ -1,8 +1,13 @@
 const mongoose = require('mongoose');
 const personSchema = mongoose.Schema({
-    clientname:{
+    client_name:{
         type: String,
         require: true
+    },
+    dni:{
+        type: String,
+        required: true,
+        unique: true
     },
     address:{
         type: Array,
@@ -11,12 +16,8 @@ const personSchema = mongoose.Schema({
             type: String,
             require: true
         },
-        code_zip:{
+        code:{
             type: String,
-            require: true
-        },
-        geo:{
-            type: Array,
             require: true
         },
         latitud: {

@@ -1,5 +1,5 @@
 const express = require('express');
-const personRouter = require('./personquiz.router');
+const personRouter = require('./personpractica.router');
 
 function routerApi(app){
     const router = express.Router();
